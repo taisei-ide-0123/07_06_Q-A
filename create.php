@@ -1,6 +1,5 @@
 <?php
-// var_dump($_POST);
-// exit();
+
 
 // DB接続情報
 $dbn = 'mysql:dbname=gsmcf_d7_06;charset=utf8;port=3306;host=localhost';
@@ -10,7 +9,6 @@ $pwd = '';
 // データを変数に格納
 $title = $_POST['title'];
 $question = $_POST['question'];
-
 
 // データ受信側の処理
 // 入力チェック(未入力の場合は弾く,commentのみ任意)
@@ -42,7 +40,6 @@ $sql = 'INSERT INTO question_table(id, title, question, deadline, created_at, up
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':title', $title, PDO::PARAM_STR);
 $stmt->bindValue(':question', $question, PDO::PARAM_STR);
-//$stmt->bindValue(':deadline', $deadline, PDO::PARAM_STR);
 $status = $stmt->execute(); // SQLを実行
 
 // 失敗時にエラーを出力し,成功時は登録画面に戻る

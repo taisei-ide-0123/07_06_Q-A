@@ -78,37 +78,3 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
-
-.b_title {
-  width: 90%;
-  margin: 0;
-  padding: 10px 0;
-  border-bottom: solid;
-  border-bottom-color: lightgrey;
-  border-bottom-width: 1px;
-  font-family: inherit;
-  font-size: 20px;
-  word-break: keep-all;
-}
-
-.contents {
-  width: 90%;
-  margin: 5px 0;
-  padding: 10px 0;
-  font-family: inherit;
-  border-bottom: solid;
-  border-bottom-color: lightgrey;
-  border-bottom-width: 1px;
-  word-break: keep-all;
-}
-
-.date {
-  width: 90%;
-  margin: 0;
-  padding-top: 10px;
-  font-size: 5px;
-  color: grey;
-  border-bottom: solid;
-  border-bottom-color: lightgrey;
-  border-bottom-width: 1px;
-}
